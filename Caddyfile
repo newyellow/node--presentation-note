@@ -1,0 +1,12 @@
+# Replace this domain with your own; point its DNS to this server.
+notes.example.com {
+    encode zstd gzip
+
+    # Generate the hash using: caddy hash-password
+    # Uncomment this block before exposing private notes to the Internet.
+    # basic_auth {
+    #     owner REPLACE_WITH_PASSWORD_HASH
+    # }
+
+    reverse_proxy 127.0.0.1:3000
+}

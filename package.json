@@ -1,0 +1,13 @@
+{
+  "name": "pocket-notes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "手機觸控翻頁與離線閱讀小抄",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "dev": "node --watch --env-file-if-exists=.env server.js",
+    "test": "node --test",
+    "check": "node --check server.js && node --check public/app.js && node --check public/sw.js"
+  },
+  "engines": { "node": ">=22.9.0" }
+}

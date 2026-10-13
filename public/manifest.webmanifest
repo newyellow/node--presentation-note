@@ -1,0 +1,12 @@
+{
+  "id": "/",
+  "name": "Pocket Notes · 口袋小抄",
+  "short_name": "口袋小抄",
+  "lang": "zh-Hant",
+  "start_url": "/?mode=read",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6f5ef",
+  "theme_color": "#f6f5ef",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
