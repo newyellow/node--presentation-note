@@ -130,7 +130,7 @@ async function createApp({ dataDir = process.env.DATA_DIR || path.join(__dirname
 if (require.main === module) {
   createApp().then(({ server, drain }) => {
     const host = process.env.HOST || '127.0.0.1';
-    const port = Number(process.env.PORT || 3000);
+    const port = Number(process.env.PORT || 6876);
     server.listen(port, host, () => {
       console.log(`Pocket Notes: http://${host}:${server.address().port}`);
       if (process.send) process.send('ready');
